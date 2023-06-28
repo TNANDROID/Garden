@@ -207,9 +207,6 @@ class _LoginState extends State<Login> {
                                 alignment: Alignment.center,
                                 child: NeumorphicButton(
                                     onPressed: () async {
-
-                                      user_name.text = "95995";
-                                      user_password.text = "crd44#";
                                       if (user_name.text.isNotEmpty) {
                                         if (user_password.text.isNotEmpty) {
                                           // Go to home

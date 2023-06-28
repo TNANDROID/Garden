@@ -11,6 +11,8 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:garden_app/Resources/ImagePath.dart' as imagePath;
 import 'package:garden_app/Resources/ColorsValue.dart' as c;
 
+import 'Login.dart';
+
 class Home extends StatefulWidget {
   @override
   State<Home> createState() => _HomeState();
@@ -121,7 +123,7 @@ class _HomeState extends State<Home> {
                     children:[
                       Container(
                         child: Image.asset(
-                          imagePath.plant8,
+                          imagePath.plant_logo,
                           fit: BoxFit.fitWidth,
                           width: MediaQuery.of(context).size.width,
                           height: 200,
@@ -580,11 +582,8 @@ class _HomeState extends State<Home> {
   }
 
   void logout() {
-    if (Platform.isAndroid) {
-      SystemNavigator.pop();
-    } else if (Platform.isIOS) {
-      exit(0);
-    }
+    Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) =>
+        Login()), (Route<dynamic> route) => false);
   }
 
 }
