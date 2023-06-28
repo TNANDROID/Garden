@@ -530,8 +530,8 @@ class _HomeState extends State<Home> {
                     children: [
                       Image.asset(
                         item.image,
-                        width: 30,
-                        height: 30,
+                        width: 50,
+                        height: 50,
                         fit: BoxFit
                             .cover,
                       ),

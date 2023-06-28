@@ -12,5 +12,6 @@ String plant9 = "assets/images/plant9.png";
 String plant6 = "assets/images/plant6.jpg";
 String plant7 = "assets/images/plant7.jpg";
 String bg = "assets/images/bg.png";
+String bg2 = "assets/images/bg2.png";
 String plant_logo = "assets/images/tree_ic.jpg";
 
